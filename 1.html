@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WEB1 - HTMLo</title>
+    <meta charset="utf-8" />
+    <!--스타일태그나 속성은 css임다. 유지보수변경가독성 굿됨-->
+    <!--텍스트 데코는 글자에 주어진 효과-->
+    <style>
+      body {
+        margin: 0;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+      }
+      #active {
+        color: red;
+      }
+      .saw {
+        color: gray;
+      }
+      h1 {
+        font-size: 80px;
+        text-align: center;
+        border-bottom: 1px solid gray;
+        margin: 0;
+        padding: 20px;
+      }
+      #grid ol {
+        border-right: 1px solid gray;
+        width: 100px;
+        margin: 0px;
+        padding: 20px;
+      }
+      #grid {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+      }
+      #grid #article {
+        padding-left: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><a href="index.html">WEB</a></h1>
+    <div id="grid">
+      <ol>
+        <li><a href="1.html" class="saw">1.HTML</a></li>
+        <li>
+          <a href="2.html" style="color: red; text-decoration: underline"
+            >2.CSS</a
+          >
+        </li>
+        <li><a href="3.html" class="saw" id="active">3.JavaScript</a></li>
+        <li>egoing</li>
+        <li>youbin</li>
+      </ol>
+
+      <div id="article">
+        <h2>HTML</h2>
+
+        <a
+          href="https://www.w3.org/TR/2011/WD-html5-20110405/"
+          target="_blank"
+          title="html5 specification"
+          ><u>Hypertext Markup Language</u>(HTML)</a
+        >a is the standard markup language for creating web pages and
+        <strong>web application</strong>
+
+        <p>
+          <iframe
+            width="280"
+            height="107.5"
+            src="https://www.youtube.com/embed/7T7r_oSp0SE"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; 
+            encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </p>
+
+        <h1>Beetles</h1>
+        <h2>External morphology</h2>
+        <h3>Head</h3>
+        <h4>Mouthparts</h4>
+        <h3>Thorax</h3>
+        <h4>Prothorax</h4>
+        <h4>Pterothorax</h4>
+        <img src="rabbit.jpg" width="50%" />
+
+        <br />To force<br />
+        line breaks<br />
+        in a text,<br />
+        use the br<br />
+        element.
+        <p>
+          To force<br />
+          line breaks<br />
+          in a text,<br />
+          use the br<br />
+          element.
+        </p>
+        <p style="margin-top: 40px">
+          To force<br />
+          line breaks<br />
+          in a text,<br />
+          use the br<br />
+          element.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!--
+    <h1><a href="index.html"><font color="violet">WEB</font></li>
+    <ul>
+        <li><a href="1.html"><font color="violet">1.HTML</font></a></li>
+        <li><a href="2.html"><font color="violet">2.CSS</font></a></li>
+        <li><a href="3.html"><font color="violet">3.JavaScript</font></a></li>
+    </ul>
+    -->
+
+<!--<strong>굵은 글씨</strong>, <u>밑줄
+
+        <br>줄바꿈. <p>문단 띄기<p style="margin-top:43px;">문단 위 간격,
+        
+        <img src="주소" width=""크기>이미지 넣기 
+        
+        <li>목차만듬 <ul>li의 부모 unordered list 
+        
+        <ol>li의 넘버링 부모 ordered list   
+
+        <meta charset="utf-8">타이틀 밑에. 한국어로 표기.utf-8로 문서 읽어라
+        
+        <a>링크
+        <a href="주소" target=""새탭으로 title="특정문장"커서 안내말>특정주소 링크 걸기
+    </u>-->
