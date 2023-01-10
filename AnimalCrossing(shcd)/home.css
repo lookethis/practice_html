@@ -1,0 +1,15 @@
+a {
+  color:rgba(24, 149, 156, 0.852);
+  text-decoration: wavy;
+}
+
+ol {
+ color: lightpink;
+ font-weight: bold; 
+}
+
+h1 {
+  text-align: center;
+  font-size: 45px; 
+  color: blue;
+}
