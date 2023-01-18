@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <title>S.Stube</title>
+  <script src="https://kit.fontawesome.com/4f3639ca0b.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="youtube3.css">
+  <script href="youtube3.js"></script>
+</head>
+<body>
+  <!-- 첫구조: 첨에 그림으로 나눈 4개 항목을 최대한 시맨틱으로 써라
+  header+section.player+section.info+section.upNext -->
+
+  <!-- header -->
+  <header>
+    <!-- 헤더 내 큰 요소 둘.logo+.icons -->
+    <div class="logo">
+      <i class="fa-brands fa-youtube"></i>
+      <span class="title">
+        <a href="https://www.youtube.com/">S.Stube</a>
+      </span> 
+    </div>
+    <div class="icons">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <i class="fa-solid fa-ellipsis-vertical"></i>
+    </div>
+  </header>
+
+  <!-- video player -->
+  <section class="player">
+    <video controls src="dongsoop.mp4"></video>
+  </section>
+
+  <div class="infoAndupNext">
+
+    <!--video info-->
+    <section class="info">
+      <!-- .metadata+.actions+.channel -->
+      <!-- metadata -->
+      <div class="metadata">
+        <!-- ul.hashtags+.titleAndBtn+.views -->
+        <ul class="hashtags">
+          <li>#AnimalCrossing</li>
+          <li>#SS&Toiler</li>
+          <li>#Foodtruck</li>
+        </ul>
+        <div class="titleAndBtn">
+          <span class="title clamp">Animal Crossing: S.S & Toiler Foodtruck Party | 
+            푸드트럭 뿌신 스스와 토일러의 스위치 대잔치! | 동숲 개발자 입문편 와우 앵깽 좋아 | 2023 톢이의 해 해피파라다이스 개봉박두! 맨햇흔 방문하여 미국토끼 접수 개봉박두!
+          </span>
+          <!-- 미리 버튼으로 만들어놔라 btn.moreBtn -->
+          <button class="moreBtn">
+            <i class="fa-solid fa-caret-down"></i>
+          </button>
+        </div>
+        <span class="views">20M views 1 month ago</span>
+    </div>
+    <!-- 해쉬태그,액션 등 여러개는 무조건 리스트로! -->
+    <!-- actions -->
+    <ul class="actions">
+      <li>
+        <button><i class="active fa-solid fa-thumbs-up"></i><span>2K</span></button>
+      </li>
+      <li>
+        <button><i class="fa-solid fa-thumbs-down"></i><span>0</span></button>
+      </li>
+      <li>
+        <button><i class="fa-solid fa-share"></i><span></span>Share</button>
+      </li>
+      <li>
+        <button><i class="fa-solid fa-plus"></i><span></span>Save</button>
+      </li>
+      <li>
+        <button><i class="fa-solid fa-flag"></i><span></span>Report</button>
+      </li>
+    </ul>
+    <!-- channel description-->
+    <div class="channel">
+      <div class="metadata">
+        <img src="rokie.png" alt="rokie">
+        <div class="info">
+          <span class="name">StreetStranger</span>
+          <span class="subscribers">10M subscribers</span>
+        </div>
+      </div>
+      <button class="subscribe">subscribe</button>
+    </div>
+    </section>
+  
+    <!--upNext-->
+    <section class="upNext">
+    <span class="title">Up next</span>
+    <ul>
+      <li class="item">
+        <div class="img"><img src="1.png" alt="dolls"></div>
+        <div class="info">
+          <span class="title">
+            이거슨 귀여운 레이니와 귀오미와 쭈니와 레온과 죠니가 가득한
+            천국입니다✨✨
+          </span>
+          <span class="name">StreetStranger</span>
+          <span class="views">10M views</span>
+        </div>
+        <button class="moreBtn">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </button>      
+      </li>
+      <li class="item">
+        <div class="img"><img src="2.png" alt="nintendoAmerica"></div>
+        <div class="info">
+          <span class="title">
+            꼭 가보셔야 합니다 덕후들이 성지순례 하는 곳! 스스와 토일러가
+            다녀왔습니다!!!✨✨
+          </span>
+          <span class="name">StreetStranger</span>
+          <span class="views">53M views</span>
+        </div>
+        <button class="moreBtn">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </button>  
+      </li>
+      <li class="item">
+        <div class="img"><img src="3.png" alt="nintendostore"></div>
+        <div class="info">
+          <span class="title">
+            칸쵸 먹고 싶다. 칸쵸랑 콜라보 해주세요 제발~~~아니면 동그란 호떡으로
+            나와주세요✨✨
+          </span>
+          <span class="name">StreetStranger</span>
+          <span class="views">17M views</span>
+        </div>
+        <button class="moreBtn">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </button>  
+      </li>
+    </ul>
+    </section>
+
+  </div>
+  
+</body>
+</html>

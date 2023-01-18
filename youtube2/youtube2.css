@@ -1,0 +1,164 @@
+:root {
+  --text-color--:  #f0f4f5;
+  --light-color--: lightgray;
+  --dark-color--: rgb(99, 99, 99);
+  --black-color--: rgb(17, 12, 12);
+}
+
+body {
+  margin: 0;
+}
+
+.navbar {
+  height: 50px;
+  display: flex;
+  margin: 0;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(9, 1, 1);
+  /* color: var(--text-color--); */
+}
+
+.navbar__link {
+  padding-left: 18px;
+}
+
+.navbar__link i {
+  font-size: 32px;
+  color: rgb(190, 21, 21);
+}
+
+.navbar__link a {
+  font-size: 32px;
+  text-decoration: none;
+  color: var(--text-color--);
+}
+
+.navbar__icons {
+  font-size: 24px;
+  padding-right: 18px;
+  color: var(--text-color--);
+}
+
+.info__tag {
+  display: flex;
+  height: 40px;
+  align-items: center;
+}
+
+.info__tag a{
+  text-decoration: none;
+  color:rgb(6, 129, 190);
+}
+
+.info__title {
+  display: flex;
+}
+
+.info__t1 {
+  font-size: 18px;
+}
+
+.info__views {
+  font-size: 14px;
+  color: var(--light-color--);
+}
+
+.info__icons {
+  color: var(--dark-color--);
+  font-size: 22px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.info__icons1 {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.info__icons11 {
+  font-size: 14px;
+}
+
+.info__cn {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.info__cn1 {
+  display: flex;
+  align-items:flex-start;
+}
+
+.info__cn1 img {
+  width: 60px;
+  height: 50px;
+}
+
+.cn_name {
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.name_big {
+  font-size: 18px;
+  color: var(--black-color--);
+}
+
+.name_small {
+  font-size: 12px;
+  color: var(--dark-color--);
+}
+
+.info__subs {
+  color: var(--black-color--);
+}
+
+.Up {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Up_title {
+  font-size: 18px;
+  color: var(--dark-color--);
+  margin: 10px 10px;
+}
+
+.Upnext {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Upnext i {
+  align-items: flex-start;
+  margin: 20px;
+}
+
+.Upnext img {
+  margin: 20px;
+  width: 270px;
+  height: 150px;
+}
+
+.Upnext1 {
+  display: flex;
+  /* align-items: baseline; */
+}
+
+.Upnext2 {
+  display: flex;
+  /* align-items: baseline; */
+}
+
+.Upnext3 {
+  display: flex;
+  /* align-items: baseline; */
+}

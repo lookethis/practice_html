@@ -1,0 +1,265 @@
+:root {
+  /* color */
+  --black-color: #131313;
+  --white-color: #faf8f8;
+  --red-color: #ff0000;
+  --blue-color: #3975d6;
+  --dark-grey-color: #858482;
+  --light-grey-color: #f2f2f2;
+
+  /* size */
+  --padding: 12px;
+  --avatar-size: 36px;
+
+  /* font size*/
+  --font-large: 18px;
+  --font-medium: 14px;
+  --font-small: 12px;
+  --font-micro: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+ul, li, a {
+  list-style: none;
+  text-decoration: none;
+}
+
+button,
+button:focus {
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--padding);
+  background-color: var(--black-color);
+  color: var(--white-color);
+  
+  /* 드코님은 비디오를 고정했지만 실제 유튭은 헤더만고정되므로 */
+  top: 0;
+  position: sticky;
+}
+
+header .logo {
+  font-size: var(--font-large);
+}
+
+header .logo i {
+  color: var(--red-color);
+}
+
+header .icons i {
+  margin-right: var(--padding);
+}
+
+
+/* viedo */
+.video {
+  top: 0;
+  position: sticky;
+  text-align: center;
+  background-color: var(--black-color);
+}
+
+.video video{
+  /* 반응형으로 만들기! */
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+}
+
+/* info */
+.infoAndUpnext > .info {
+  padding: var(--padding);
+}
+
+.info .metadata .hashtags {
+  display: flex;
+  font-size: var(--font-small);
+}
+
+.info .metadata .hashtags li {
+  margin-right: var(--padding);
+}
+
+.info .hashtags li a {
+  color: var(--blue-color);
+}
+
+.info .metadata .titleAndBtn {
+  display: flex;
+}
+
+.info .metadata .titleAndBtn .title {
+  font-size: var(--font-medium);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  margin-right: var(--padding);
+}
+
+.info .metadata .titleAndBtn .moreBtn {
+  height: 100%;
+  background-color: #fff;
+}
+
+/* 왜 이거 안되징. 글 색 안 변함 */
+.info .views {
+  color: var(--dark-grey-color);
+  font-size: var(--font-small);
+}
+
+.info .actions {
+  display: flex;
+  justify-content: space-around;
+  margin: var(--padding) 0;
+}
+
+.info .actions button {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-small);
+  background-color: #fff;
+  color: var(--dark-grey-color);
+}
+
+.info .actions button i {
+  /* 액션 이모들과 글자 정렬 맞추기 */
+  margin: 0 auto;
+  margin-bottom: calc(var(--padding) / 2);
+  border: none;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.info .actions button i.active {
+  color: var(--blue-color);
+}
+
+
+/* channel */
+.info .channel {
+  margin-left: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: calc(var(--padding) / 2) 0;
+  border-top: 1px solid var(--light-grey-color);
+  border-bottom: 1px solid var(--light-grey-color);
+}
+
+.info .channel .metadata {
+  display: flex;
+  align-items: center;
+}
+
+.info .channel .metadata img {
+  width: 36px;
+  height: 36px;
+  border-radius: 5%;
+}
+
+.info .channel .metadata .info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info .channel .metadata .info .name{
+  font-size: var(--font-medium);
+}
+
+.info .channel .metadata .info .subs {
+  font-size: var(--font-small);
+  color: var(--dark-grey-color);
+}
+
+.info .channel .subscribe {
+  margin-right: var(--padding);
+  color: var(--red-color);
+  text-transform: uppercase;
+  background-color: #fff;
+}
+
+/* Upnext */
+
+/* 왜 글자 위로는 안들어갔지 마진 ㅠㅜ */
+.Upnext {
+  padding: 0 var(--padding);
+}
+
+.Upnext > .title {
+  padding: 0;
+  font-size: var(--font-medium);
+  color: var(--dark-grey-color);
+  margin-bottom: calc(var(--padding) / 2);
+}
+
+.Upnext .item {
+  display: flex;
+  margin-top: var(--padding);
+}
+
+/* 이미지를 박스 안에 넣어야 반응형으로 만들 수 있 */
+.Upnext .item .img {
+  flex: 1 1 35%;
+  margin-right: var(--padding);
+}
+
+.Upnext .item .img img{
+  border-radius: 10%;
+  width: 260px;
+}
+
+.Upnext .item .info {
+  flex: 1 1 60%;
+}
+
+.Upnext .item .moreBtn {
+  height: 100%;
+  flex: 1 1 5%;
+  background-color: #fff;
+}
+
+.Upnext .item .info {
+  display: flex;
+  flex-direction: column;
+}
+
+.Upnext .item .info .title {
+  font-size: var(--font-small);
+}
+
+.Upnext .item .info .name,
+.Upnext .item .info .views {
+  font-size: var(--font-micro);
+  color: var(--dark-grey-color);
+}
+
+.infoAndUpnext {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+
+  .infoAndUpnext {
+    flex-direction: row;
+  }
+  
+} 
