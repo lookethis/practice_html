@@ -1,0 +1,46 @@
+/* selector {
+  property: value;
+} */
+
+
+/* universial속성 */
+* {
+  color: green;
+}
+
+li {
+  color: blue;
+}
+
+/* li중 아이디 스페셜인 애만 바꿈 */
+li#special {
+  color: pink;
+}
+
+/* div가 블럭 요소라서 */
+.red {
+  background: yellow;
+}
+
+
+/* 패딩: 콘텐츠 자체가 커짐 */
+/* 마진: 콘텐츠 외 주변이 넓어짐 */
+/* 보더: 색 안넣으면 유니버셜꺼 적용됨 */
+.orange {
+  width: 100px;
+  height: 100px; 
+  padding: 20px 0;
+  margin: 20px;
+  border: 20px solid pink;
+  background: orange;
+}
+button:hover {
+  color: red;
+  background: beige;
+}
+
+/* href뒤에 ^/$써서 */
+/* 특정문구로 시작/끝나는 것들 바꿈 */
+a[href$=".com"] {
+  color: purple;
+}

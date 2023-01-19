@@ -1,0 +1,125 @@
+/* 100% vs 100vh */
+/* 전체 화면 100퍼 vs 보이는 화면 100퍼 */
+
+
+/* 꼭 컨테이너 부모인 body, html */
+/* 먼저 보이게 해야 */
+/* body, html {
+  height: 100%;
+} */
+
+/* 컨테이터에 배경 먹인게 보인다 */
+/* .container {
+  background: beige;
+  height: 100%;
+}
+ */
+/* vs */
+
+/* vh는 그냥 컨테이너만 써도 됨 */
+.container {
+  background: skyblue;
+  height: 100vh;
+  
+  /* 왼쪽->오른쪽으로. 일렬로 정렬 */
+  display: flex;
+  
+  /* 왼~오/ 오~왼 방향, 중심은 수평축 */
+  flex-direction: row;
+  /* flex-direction: row-reverse; */
+
+  /* 상~하/ 하~상 방향, 중심은 수평축 */
+  /* flex-direction: column;
+  flex-direction: column-reverse; */
+  
+  /* item찰 때 다음줄로 안보낸다/보낸다/위에서부터 wrapping */
+  /* flex-wrap:nowrap; */
+  flex-wrap:wrap;
+  /* flex-wrap:wrap-reverse; */
+  
+  /* 나열 방향, 나눔 여부 합하여 선언 */
+  /* flex-flow: column nowrap; */
+
+  
+  
+  
+  /* justify-content: 중심축에서 아이템 배열하기 */
+  
+  
+  /* 기본값 */
+  /* 중심축 수평: 왼->오/ 중심축 수직: 위->아래 */
+  justify-content: flex-start;
+  justify-content: flex-end;
+  
+  /* 내용 중앙정렬 */
+  justify-content: center;
+  /* 박스 둘러싸는 빈 공간? 넣어줌 */
+  /* 네모 각각에 들어가므로 두 네모 사이 공간은 2배 */
+  justify-content: space-around;
+  /* 네모 간격 같음 */
+  justify-content: space-evenly;
+  /* 양끝 item은 벽 붙이고 나머지 네모 간격 같음 */
+  justify-content: space-between;
+  
+  
+  /* align-items: 반대축에서 아이템 배열하기 */
+  
+  /* item을 화면 수직 중심에 넣는다 */
+  /* align-items: center; */
+  /* item 중앙 정렬 */
+  align-items: baseline;
+  /* 맨 위아랫줄은 바닥에 딱붙, 줄 사이에 스페이스 */
+  align-content: space-between;
+  /* 화면 중심으로 아이템 다 모임 */
+  align-content: center;
+
+
+
+}
+
+.item {
+  width: 40px;
+  height: 40px;
+}
+
+.item1 {
+  background: #ef9a9a;
+   /* padding: 20px; */
+}
+
+.item2 {
+  background: #f48fb1;
+}
+
+.item3 {
+  background: #ce93d8;
+}
+
+.item4 {
+  background: #b39ddb;
+}
+
+.item5 {
+  background: #82b1ff;
+}
+
+.item6 {
+  background: #a5d6a7;
+}
+
+.item7 {
+  background: #e6ee9c;
+}
+
+.item8 {
+  background: #e1bfe8;
+}
+
+.item9 {
+  background: #80cbc4;
+}
+
+.item10 {
+  background: #ffff8d;
+}
+

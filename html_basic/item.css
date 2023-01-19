@@ -1,0 +1,41 @@
+.container {
+  padding-top: 100px;
+  background: skyblue;
+  height: 100vh;
+  display: flex;
+}
+
+.item {
+  width: 40px;
+  height: 40px;   
+  border: 1px solid darkgray;
+}
+
+.item1 {
+  background: #ef9a9a;
+  
+  /* 아이템 순서.잘 안써 */
+   /* order: 2; */
+  
+  /* 화면 커지면 이 비율로 커져(2:1:1) */
+  /* 화면 작아지면 이 비율로 작아져(1:1:2) */
+  /* flex-grow: 2;
+  flex-shrink: 1; */
+  /* 화면 커지나 작아지나 항상 비율 유지 */
+  /* flex-basis: 60%; */
+  
+  /* 종합! */
+  /* grow, shrink, basis */
+  flex: 2 2 auto; 
+}
+
+.item2 {
+  background: #f48fb1;
+  /* flex-basis: 30%; */
+  align-self: center;
+}
+
+.item3 {
+  background: #ce93d8;
+ /* flex-basis: 10%; */
+}
