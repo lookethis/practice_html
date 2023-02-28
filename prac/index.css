@@ -1,0 +1,54 @@
+body {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  font: Arial;
+}
+
+.box {
+  width: 150px;
+  height: 100px;
+  border-radius: 5px;
+  background-color: greenyellow;
+  padding: 10px;
+  float: left;
+  margin-right: 20px;
+}
+
+.reset {
+  clear: left;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: aquamarine;
+  margin-bottom: 20px;
+}
+
+.box01 {
+  transition: width 0.3s ease-in;
+}
+
+.box01:hover {
+  width: 200px;
+}
+
+.box02 {
+  transition: 2s ease-out;
+}
+
+.box02:hover {
+  background-color: yellowgreen;
+}
+
+.box03:hover {
+  border-radius: 50px;
+}
+
+.box04:hover {
+  margin-top: 100px;
+}
+
+/* .box05 {
+} */
